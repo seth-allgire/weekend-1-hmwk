@@ -1,5 +1,6 @@
 body {
   margin: 20px;
+  background-color: rgb(173, 182, 196);
 }
 
 .header {
@@ -80,4 +81,18 @@ footer div p {
   flex-basis: auto;
   margin: 3px;
   max-height: 16px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+}
+section {
+  flex: 1 1 calc((100% / 3) * 2);
+  min-width: 300px;
+}
+
+aside {
+  flex: 1 0 calc(100% / 3);
 }
