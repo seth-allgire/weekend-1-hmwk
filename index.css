@@ -1,6 +1,6 @@
 body {
   margin: 20px;
-  background-color: rgb(164, 194, 168);
+  background-color: rgb(143, 143, 140);
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -141,6 +141,68 @@ h5 {
   line-height: 40px;
 }
 
+/* BEGINNING OF FOR SALE PAGE */
+.vertical-menu {
+  width: 280px;
+  padding-right: 10px;
+}
+
+.vertical-menu a {
+  background-color: rgb(172, 235, 152);
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover,
+#back-to-top:hover {
+  background-color: rgba(171, 235, 152, 0.329);
+  color: ivory;
+}
+
+.img-fluid {
+  width: 50%;
+  border-radius: 5px;
+}
+.img-scale:hover {
+  -ms-transform: scale(2, 2) translate(40px, 40px);
+  -webkit-transform: scale(2, 2) translate(40px, 40px);
+  transform: scale(2, 2) translate(40px, 40px);
+  transition: 200ms;
+}
+
+section article {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(221, 221, 215);
+  border: solid rgb(42, 43, 46) 1px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  flex: 1 0 calc(50% - 30px);
+  min-height: 200px;
+  width: 50px;
+  position: relative;
+
+  padding: 6px 10px 6px 10px;
+  margin: 4px 4px 4px 4px;
+}
+section.products {
+  padding-right: 0px;
+  flex: 1 1 460px;
+}
+
+article b.products {
+  margin-left: 0px;
+  font-size: large;
+}
+
+nav a {
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+  color: rgb(42, 43, 46);
+  background-color: rgb(172, 235, 152);
+}
 @media (max-width: 780px) {
   main section {
     padding-right: 0px;
@@ -161,6 +223,9 @@ h5 {
     min-height: 148px;
     margin: 4px 4px 4px 4px;
   }
+  section.products {
+    flex: 1 1 100%;
+  }
 }
 @media (max-width: 550px) {
   section div {
@@ -171,5 +236,8 @@ h5 {
   }
   section div:nth-child(5n + 2) {
     flex: 1 0 100%;
+  }
+  section article {
+    min-width: 255px;
   }
 }
