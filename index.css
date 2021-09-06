@@ -53,10 +53,11 @@ ul button {
 }
 
 button:hover {
-  -ms-transform: scale(1.1, 1.1);
-  -webkit-transform: scale(1.1, 1.1);
-  transform: scale(1.1, 1.1);
-  transition: 500ms;
+  -ms-transform: scale(1.05, 1.05);
+  -webkit-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
+  transition: 200ms;
+  background-color: ivory;
 }
 
 .disabled-button {
@@ -227,6 +228,7 @@ nav a {
     flex: 1 1 100%;
   }
 }
+
 @media (max-width: 550px) {
   section div {
     flex: 0 0 100%;
@@ -240,4 +242,31 @@ nav a {
   section article {
     min-width: 255px;
   }
+}
+/* @media (max-width: 355px) {
+  .contact-header {
+    font-size: 16px;
+  }
+} */
+
+label,
+form p {
+  font-weight: 500;
+  width: 100px;
+  margin-bottom: 5px;
+}
+input.name-email {
+  width: 200px;
+}
+::placeholder {
+  font-weight: 300;
+}
+p.reason-radio {
+  margin-bottom: 5px;
+}
+.reason-radio {
+  width: 200px;
+}
+.radio-label {
+  width: 150px;
 }

@@ -25,7 +25,7 @@
         </button>
         <button>
           <li>
-            <a href="for-sale.html" .\ title="For Sale">For Sale</a>
+            <a href="for-sale.html" .\ title="For Sale">Products</a>
           </li>
         </button>
         <button class="disabled-button">
@@ -37,7 +37,44 @@
         </button>
       </ul>
     </header>
-    <p>sldkfj</p>
+
+    <div class="contact-form">
+      <h5 class="contact-header">Please complete the following:</h5>
+      
+      <form>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" class="name-email" placeholder="Joan Smith" />
+      </form>
+      
+      <form>
+      <label for="email"> E-mail:</label>
+      <input type="text" id="email" class="name-email" placeholder="example@email.com" />
+      </form>
+
+      <form>
+        <p>Comments:</p>
+        <textarea name="comments" cols="50" rows="5">
+        </textarea>
+      </form>
+      
+      <div>
+        <p class="reason-radio">Reason for contacting us:</p>
+        <form>
+          <input type="radio" id="product-info" value="product-info"checked>
+          <label for="product-info" class="radio-label">Product information</label>
+        </form>
+        <form>
+          <input type="radio" id="design">
+          <label for="design" class="radio-label">Design questions</label>
+        </form>
+        <form>
+          <input type="radio" id="concern">
+          <label for="concern" class="radio-label">Concern</label>
+        </form>
+      </div>
+
+
+
     <footer class="footer">
       <img
         class="footer-img"
