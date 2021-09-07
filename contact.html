@@ -38,42 +38,55 @@
       </ul>
     </header>
 
-    <div class="contact-form">
+    
       <h5 class="contact-header">Please complete the following:</h5>
-      
-      <form>
-      <label for="name">Your Name:</label>
-      <input type="text" id="name" class="name-email" placeholder="Joan Smith" />
-      </form>
-      
-      <form>
-      <label for="email"> E-mail:</label>
-      <input type="text" id="email" class="name-email" placeholder="example@email.com" />
-      </form>
+      <div class="container">
+        <form class="text-form">
+          <label for="name" class="form-header">Your Name:</label>
+          <input
+            type="text"
+            id="name"
+            class="name-email"
+            placeholder="Joan Smith"
+          />
+        </form>
 
-      <form>
-        <p>Comments:</p>
-        <textarea name="comments" cols="50" rows="5">
-        </textarea>
-      </form>
+        <form class="text-form">
+          <label for="email" class="form-header"> E-mail:</label>
+          <input
+            type="text"
+            id="email"
+            class="name-email"
+            placeholder="example@email.com"
+          />
+        </form>
+
+        <form class="text-form">
+          <p class="form-header">Comments:</p>
+          <textarea name="comments" cols="50" rows="5"> </textarea>
+        </form>
+
+        
+          <p class="reason-radio form-header">Reason for contacting us:</p>
+          <form>
+            <input type="radio" id="product-info" name="reason" value="product-info" checked />
+            <label for="product-info" class="radio-label"
+              >Product information</label>
+          </form>
+          <form>
+            <input type="radio" id="design" name="reason" value="design"/>
+            <label for="design" class="radio-label">Design questions</label>
+          </form>
+          <form>
+            <input type="radio" id="concern" name="reason" value="concern"/>
+            <label for="concern" class="radio-label">Concern</label>
+          </form>
+        
       
-      <div>
-        <p class="reason-radio">Reason for contacting us:</p>
-        <form>
-          <input type="radio" id="product-info" value="product-info"checked>
-          <label for="product-info" class="radio-label">Product information</label>
-        </form>
-        <form>
-          <input type="radio" id="design">
-          <label for="design" class="radio-label">Design questions</label>
-        </form>
-        <form>
-          <input type="radio" id="concern">
-          <label for="concern" class="radio-label">Concern</label>
-        </form>
+      
+        <input type="submit" value="Submit" class="submit-button" />
       </div>
-
-
+    </div>
 
     <footer class="footer">
       <img

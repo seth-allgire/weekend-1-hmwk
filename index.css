@@ -1,17 +1,17 @@
 body {
   margin: 20px;
-  background-color: rgb(143, 143, 140);
+
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
 .header {
-  background-color: rgb(96, 49, 64);
+  background-color: #9ee6c2;
   height: 50px;
 }
 .footer {
-  background-color: rgb(96, 49, 64);
+  background-color: #9ee6c2;
   height: 100px;
   display: flex;
   padding-right: 10px;
@@ -32,7 +32,7 @@ li a {
 }
 
 li a:hover {
-  color: rgb(96, 49, 64);
+  color: black;
 }
 
 ul {
@@ -49,7 +49,6 @@ ul button {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   border-radius: 5px;
-  background-color: rgb(164, 175, 105);
 }
 
 button:hover {
@@ -57,11 +56,11 @@ button:hover {
   -webkit-transform: scale(1.05, 1.05);
   transform: scale(1.05, 1.05);
   transition: 200ms;
-  background-color: ivory;
+  background-color: #d3d3d3;
 }
 
 .disabled-button {
-  background-color: rgba(164, 175, 105, 0.5);
+  background-color: #9ee6c248;
 }
 
 .disabled-button:hover {
@@ -70,6 +69,7 @@ button:hover {
   transform: scale(1, 1);
   color: black;
   cursor: default;
+  background-color: #9ee6c248;
 }
 
 .footer-img {
@@ -84,8 +84,6 @@ footer div {
 }
 
 footer div p {
-  color: rgb(173, 182, 196);
-  text-shadow: 2px 2px black;
   flex-basis: auto;
   margin: 3px;
   max-height: 16px;
@@ -102,6 +100,7 @@ main section {
   display: flex;
   flex-direction: row;
   flex-flow: row wrap;
+  align-content: flex-start;
 }
 
 main aside {
@@ -112,7 +111,7 @@ main aside {
 }
 
 section div {
-  background-color: rgba(164, 175, 105, 0.5);
+  background-color: #9ee6c248;
   border: solid black 1px;
   flex: 1 0 calc(50% - 18px);
   min-height: 200px;
@@ -127,7 +126,7 @@ section div:nth-child(5n + 2) {
 }
 
 aside figure {
-  background-color: rgba(164, 175, 105, 0.5);
+  background-color: #f2f2f2;
   border: solid black 1px;
   flex: 0 1 100%;
   height: auto;
@@ -139,7 +138,7 @@ h5 {
   text-align: center;
   width: 100%;
   margin-bottom: 0px;
-  line-height: 40px;
+  max-height: 40px;
 }
 
 /* BEGINNING OF FOR SALE PAGE */
@@ -149,7 +148,7 @@ h5 {
 }
 
 .vertical-menu a {
-  background-color: rgb(172, 235, 152);
+  background-color: #d6f6e1;
   color: black;
   display: block;
   padding: 12px;
@@ -158,8 +157,10 @@ h5 {
 
 .vertical-menu a:hover,
 #back-to-top:hover {
-  background-color: rgba(171, 235, 152, 0.329);
-  color: ivory;
+  background-color: #d3d3d3;
+}
+#back-to-top:hover {
+  color: black;
 }
 
 .img-fluid {
@@ -167,16 +168,16 @@ h5 {
   border-radius: 5px;
 }
 .img-scale:hover {
-  -ms-transform: scale(2, 2) translate(40px, 40px);
-  -webkit-transform: scale(2, 2) translate(40px, 40px);
-  transform: scale(2, 2) translate(40px, 40px);
+  -ms-transform: scale(1.5, 1.5) translate(20px, 20px);
+  -webkit-transform: scale(1.5, 1.5) translate(20px, 20px);
+  transform: scale(1.5, 1.5) translate(20px, 20px);
   transition: 200ms;
 }
 
 section article {
   display: flex;
   flex-direction: column;
-  background-color: rgb(221, 221, 215);
+  background-color: #9ee6c248;
   border: solid rgb(42, 43, 46) 1px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   flex: 1 0 calc(50% - 30px);
@@ -202,7 +203,6 @@ nav a {
   bottom: 0px;
   right: 10px;
   color: rgb(42, 43, 46);
-  background-color: rgb(172, 235, 152);
 }
 @media (max-width: 780px) {
   main section {
@@ -243,17 +243,34 @@ nav a {
     min-width: 255px;
   }
 }
-/* @media (max-width: 355px) {
-  .contact-header {
-    font-size: 16px;
+@media (max-width: 465px) {
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 425 px;
   }
-} */
+}
 
-label,
-form p {
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 329px;
+}
+.submit-button {
+  margin-inline-start: auto;
+}
+textarea {
+  max-width: 261px;
+}
+.form-header {
   font-weight: 500;
   width: 100px;
   margin-bottom: 5px;
+}
+
+.text-form {
+  margin-bottom: 3px;
 }
 input.name-email {
   width: 200px;
@@ -269,4 +286,8 @@ p.reason-radio {
 }
 .radio-label {
   width: 150px;
+}
+.submit-button {
+  display: block;
+  float: right;
 }
